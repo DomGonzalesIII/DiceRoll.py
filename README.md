@@ -1,4 +1,5 @@
 import random
+import time
 
 # methods
 def diceRoll(numSides):
@@ -10,6 +11,7 @@ wannaRoll = 'y'
 
 #main
 print("Hello, welcome to Dice Roll!")
+time.sleep(1)
 
 print ('How many sides would you like your die to have?')
 sides = int(input())
@@ -19,6 +21,7 @@ while wannaRoll == 'y':
     result = diceRoll(sides)
     result = str(result)
     print ('You rolled a ' + result + ' .')
+    time.sleep(1)
     print ('Would you like to roll again?(y or n)')
     wannaRoll = input()
 
